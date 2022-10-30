@@ -1,0 +1,13 @@
+genome: hg19
+sample:
+    - BuP5P7
+    - PD10_XD_omniATAC
+    - PD10_XD_scATAC
+    - STCTac_fixed
+    - STCTac_native
+input:
+    Rawdata
+output:
+    atac_output_test
+shiftExtendSize:
+    - 75

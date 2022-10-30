@@ -1,0 +1,22 @@
+channels:
+  - anaconda
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - pandas
+  - numpy
+  - seqkit=0.13.2=0
+  - cutadapt=2.10=py37hf01694f_1
+  - samtools
+  - pip
+  - Cython
+  - r-base=4.1
+  - r-tidyverse
+  - parallel
+  - bowtie2=2.4.4
+  - picard=2.26.5
+  - seqkit=0.13.2
+  - bedtools=2.30.0
+  - deeptools=3.5.1
+  - fastqc
