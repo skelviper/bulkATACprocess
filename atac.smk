@@ -28,15 +28,15 @@ if genomeVersion=="hg19":
 #     CHROMSIZES="/conglilab/shared/genomics/pipeline_atac/hg38/hg38.chrom.sizes"
 #     macs2_genome_size="hs"
 
-# elif genomeVersion=="mm10":
-#     Index='/conglilab/shared/genomics/pipeline_atac/mm10/bowtie2_index/mm10_no_alt_analysis_set_ENCODE.fasta'
-#     blacklist='/conglilab/shared/genomics/pipeline_atac/mm10/mm10.blacklist.withJDB.sorted.bed'
-#     filter1='random'
-#     filter2='chrUn'
-#     TSS_BED='/conglilab/shared/genomics/mouse/GRCm38_2019/Annotations/GRCm38_gencode.m23/main/mm10.vM23.pc.lv12.tss.bed.gz'
-#     TSS_extend='/conglilab/shared/genomics/mouse/GRCm38_2019/Annotations/GRCm38_gencode.m23/main/mm10.vM23.pc.lv12.tss.ext2k.bed'
-#     CHROMSIZES="/conglilab/shared/genomics/pipeline_atac/mm10/mm10.chrom.sizes"
-#     macs2_genome_size="mm"
+elif genomeVersion=="mm10":
+    Index='/share/Data/public/ref_genome/mouse_ref/M23/bowtie2index/genome'
+    blacklist='/share/Data/public/ref_genome/mouse_ref/M23/raw_data/mm10-blacklist.v2.bed'
+    filter1='GL'
+    filter2='JH'
+    TSS_BED='/share/Data/public/ref_genome/mouse_ref/M23/raw_data/tss.mm10.txt'
+    TSS_extend='/share/Data/public/ref_genome/mouse_ref/M23/raw_data/tss.mm10.extend_2k.txt'
+    CHROMSIZES="/share/Data/public/ref_genome/mouse_ref/M23/raw_data/chr.len"
+    macs2_genome_size="mm"
 else:
     print("Invalid Genome Version.")
 
