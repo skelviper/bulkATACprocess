@@ -15,7 +15,7 @@ dependencies:
   - r-tidyverse
   - parallel
   - bowtie2=2.4.4
-  - picard=2.26.5
+  - picard=2.23.3=0
   - seqkit=0.13.2
   - bedtools=2.30.0
   - deeptools=3.5.1
